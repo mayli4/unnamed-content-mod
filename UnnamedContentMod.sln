@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{1FEDDA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnnamedContentMod", "src\UnnamedContentMod\UnnamedContentMod.csproj", "{05B9DB6C-1B00-4FC1-B05C-77063B161653}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerator", "src\SourceGenerator\SourceGenerator.csproj", "{F88E2133-BDF9-466B-8D8E-4FDA616F3876}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,10 +42,15 @@ Global
 		{05B9DB6C-1B00-4FC1-B05C-77063B161653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05B9DB6C-1B00-4FC1-B05C-77063B161653}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05B9DB6C-1B00-4FC1-B05C-77063B161653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F88E2133-BDF9-466B-8D8E-4FDA616F3876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F88E2133-BDF9-466B-8D8E-4FDA616F3876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F88E2133-BDF9-466B-8D8E-4FDA616F3876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F88E2133-BDF9-466B-8D8E-4FDA616F3876}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F7F9C60B-BC3C-407F-9BAE-EDBF5372B785} = {A3916878-B7D3-4154-9747-514E71A2B2C3}
 		{607337D5-0528-43FE-AAFB-579853469F77} = {A3916878-B7D3-4154-9747-514E71A2B2C3}
 		{05B9DB6C-1B00-4FC1-B05C-77063B161653} = {A3916878-B7D3-4154-9747-514E71A2B2C3}
+		{F88E2133-BDF9-466B-8D8E-4FDA616F3876} = {A3916878-B7D3-4154-9747-514E71A2B2C3}
 	EndGlobalSection
 EndGlobal
