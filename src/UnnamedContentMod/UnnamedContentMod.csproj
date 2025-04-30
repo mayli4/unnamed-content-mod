@@ -8,9 +8,9 @@
 		<RootNamespace>UnnamedContentMod</RootNamespace>
 	</PropertyGroup>
 
-	<ItemGroup Label="gen">
-		<ProjectReference Include="..\SourceGenerator\SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-	</ItemGroup>
+<!--	<ItemGroup Label="gen">-->
+<!--		<ProjectReference Include="..\SourceGenerator\SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />-->
+<!--	</ItemGroup>-->
 
 	<!-- Required for source generators to properly recognize assets. -->
 
@@ -26,6 +26,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="JetBrains.Annotations" Version="2025.1.0-eap1" />
+		<PackageReference Include="Mathica.CodeAnalysis" Version="1.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
