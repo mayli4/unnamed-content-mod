@@ -1,0 +1,21 @@
+<Project>
+
+    <Import Project="..\..\tModLoader.targets"/>
+
+    <PropertyGroup>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Krafs.Publicizer" Version="2.3.0" PrivateAssets="all" ExcludeAssets="runtime"/>
+    </ItemGroup>
+
+    <ItemGroup Label="Publicized assemblies">
+        <!-- It's reasonable to publicize tModLoader.  Don't include
+             compiler-generated members since it breaks events and some other
+             stuff. -->
+        <Publicize Include="tModLoader" IncludeCompilerGeneratedMembers="false"/>
+        <Publicize Include="FNA" IncludeCompilerGeneratedMembers="false"/>
+        <!-- <Publicize Include="FNA" IncludeCompilerGeneratedMembers="false"/> -->
+    </ItemGroup>
+</Project>

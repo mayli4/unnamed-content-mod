@@ -1,0 +1,25 @@
+Mods: {
+	UnnamedContentMod: {
+		Items: {
+			BirchSaplingItem: {
+				DisplayName: Birch Sapling Item
+				Tooltip: ""
+			}
+
+			LooseDirtItem: {
+				DisplayName: Loose Dirt Item
+				Tooltip: ""
+			}
+
+			SakuraWoodItem: {
+				DisplayName: Sakura Wood Item
+				Tooltip: ""
+			}
+
+			WillowWoodItem: {
+				DisplayName: Willow Wood Item
+				Tooltip: ""
+			}
+		}
+	}
+}

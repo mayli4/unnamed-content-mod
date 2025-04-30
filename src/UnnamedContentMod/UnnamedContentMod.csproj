@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import mod properties -->
+	<Import Project="..\Mod.targets" />
+	<Import Project="..\Mod.Build.targets" />
+
+	<PropertyGroup>
+		<RootNamespace>UnnamedContentMod</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup Label="gen">
+		<ProjectReference Include="..\SourceGenerator\SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	</ItemGroup>
+
+	<!-- Required for source generators to properly recognize assets. -->
+
+	<ItemGroup>
+		<AdditionalFiles Include="Assets/**/*.png" />
+		<AdditionalFiles Include="Assets/**/*.fxc" />
+		<AdditionalFiles Include="Assets/**/*.xnb" />
+		<AdditionalFiles Include="Assets/**/*.xnc" />
+		<AdditionalFiles Include="Assets/**/*.wav" />
+		<AdditionalFiles Include="Assets/**/*.ogg" />
+		<AdditionalFiles Include="Assets/**/*.mp3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="JetBrains.Annotations" Version="2025.1.0-eap1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ClCompile Include="Assets\Shaders\example.hlsl" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+displayName = unnamed content mod
+author = mathica
+version = 0.1
