@@ -6,11 +6,13 @@
 
 	<PropertyGroup>
 		<RootNamespace>UnnamedContentMod</RootNamespace>
+		<Configurations>Debug;Release;</Configurations>
+		<Platforms>AnyCPU</Platforms>
 	</PropertyGroup>
 
-	<ItemGroup>
-		<ProjectReference Include="..\SourceGenerator\SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
-	</ItemGroup>
+	<!--	<ItemGroup Label="gen">-->
+	<!--		<ProjectReference Include="..\SourceGenerator\SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />-->
+	<!--	</ItemGroup>-->
 
 	<!-- Required for source generators to properly recognize assets. -->
 
@@ -26,10 +28,14 @@
 
 	<ItemGroup>
 		<PackageReference Include="JetBrains.Annotations" Version="2025.1.0-eap1" />
-		<PackageReference Include="Microsoft.Extensions.Primitives" Version="9.0.0.0" />
+		<PackageReference Include="Mathica.CodeAnalysis" Version="1.1.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ClCompile Include="Assets\Shaders\example.hlsl" />
+		<ClCompile Include="Assets\Shaders\example.hlsl" />
 	</ItemGroup>
+
 </Project>

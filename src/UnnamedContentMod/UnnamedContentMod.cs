@@ -1,4 +1,6 @@
-﻿using Terraria.ModLoader;
+﻿global using static UnnamedContentMod.Assets.Assets;
+
+using Terraria.ModLoader;
 
 namespace UnnamedContentMod;
 
