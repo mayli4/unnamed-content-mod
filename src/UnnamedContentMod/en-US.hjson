@@ -21,5 +21,7 @@ Mods: {
 				Tooltip: ""
 			}
 		}
+
+		NPCs.Monkey.DisplayName: Monkey
 	}
 }

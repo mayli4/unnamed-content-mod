@@ -9,15 +9,19 @@ using Terraria.ObjectData;
 
 namespace UnnamedContentMod.Content.Tiles;
 
-public sealed class BirchTree : ModTile {
+public sealed class BirchTree : ModTile
+{
     public override string Texture { get; } = Images.Tiles.Forest.KEY_BirchSapling;
 }
 
-public sealed class BirchSapling : ModTile {
-    public sealed class BirchSaplingItem : ModItem {
+public sealed class BirchSapling : ModTile
+{
+    public sealed class BirchSaplingItem : ModItem
+    {
         public override string Texture { get; } = Images.Tiles.Forest.KEY_BirchSaplingItem;
-        
-        public override void SetDefaults() {
+
+        public override void SetDefaults()
+        {
             Item.width = 16;
             Item.height = 16;
             Item.maxStack = Item.CommonMaxStack;
@@ -30,10 +34,11 @@ public sealed class BirchSapling : ModTile {
             Item.DefaultToPlaceableTile(ModContent.TileType<BirchSapling>());
         }
     }
-    
+
     public override string Texture { get; } = Images.Tiles.Forest.KEY_BirchSapling;
-    
-    public override void SetStaticDefaults() {
+
+    public override void SetStaticDefaults()
+    {
         Main.tileFrameImportant[Type] = true;
         Main.tileNoAttach[Type] = true;
         Main.tileLavaDeath[Type] = true;
@@ -54,7 +59,7 @@ public sealed class BirchSapling : ModTile {
         TileObjectData.newTile.RandomStyleRange = 3;
         TileObjectData.newTile.StyleMultiplier = 3;
         TileObjectData.addTile(Type);
-           
+
         TileID.Sets.CommonSapling[Type] = true;
         TileID.Sets.SwaysInWindBasic[Type] = true;
         TileID.Sets.IgnoredByGrowingSaplings[Type] = true;
